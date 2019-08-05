@@ -1,0 +1,116 @@
+# This is your sidebar TOC. The sidebar code loops through sections here and provides the appropriate formatting.
+
+
+entries:
+- title: Sidebar
+  product: Cheatsheets
+  version: 1.0
+  folders:
+
+  - title:
+    output: pdf
+    type: frontmatter
+    folderitems:
+    - title:
+      url: /titlepage.html
+      output: pdf
+      type: frontmatter
+    - title:
+      url: /tocpage.html
+      output: pdf
+      type: frontmatter
+
+  - title: Encryption
+    output: web, pdf
+    folderitems:
+    - title: OpenSSL
+      url: /cs_openssl.html
+      output: web
+
+    - title: GPG
+      url: /cs_gpg.html
+      output: web, pdf
+
+    - title: SSH
+      url: /cs_ssh.html
+      output: web, pdf
+
+  - title: Encoding
+    output: web, pdf
+
+    folderitems:
+    - title: Markdown
+      url: /cs_markdown.html
+      output: web, pdf
+
+    - title: YAML
+      url: /cs_yaml.html
+      output: web, pdf
+
+    - title: JSON
+      url: /cs_json.html
+      output: web, pdf
+
+  - title: Containerization
+    output: web, pdf
+
+    folderitems:
+    - title: Docker
+      url: /cs_docker.html
+      output: web, pdf
+    
+    - title: Kubernetes
+      url: /cs_kubernetes.html
+      output: web, pdf
+    
+    - title: Terraform
+      url: /cs_terraform.html
+      output: web, pdf
+
+    - title: Vagrant
+      url: /cs_vagrant.html
+      output: web, pdf
+
+  - title: Development Environments
+    output: web, pdf
+
+    folderitems:
+    - title: angular
+      url: /cs_angular.html
+      output: web, pdf
+
+    - title: dotnet
+      url: /cs_dotnet.html
+      output: web, pdf
+
+    - title: Maven
+      url: /cs_maven.html
+      output: web, pdf
+
+    - title: Vue
+      url: /cs_i3.html
+      output: web, pdf
+
+  - title: Tools
+    output: web, pdf
+
+    folderitems:
+    - title: i3
+      url: /cs_i3.html
+      output: web, pdf
+      
+    - title: vim
+      url: /cs_vim.html
+      output: web, pdf
+
+    - title: Hotel
+      url: /cs_hotel.html
+      output: web, pdf
+    
+    - title: tmux
+      url: /cs_tmux.html
+      output: web, pdf
+
+    - title: VirtualBox
+      url: /cs_virtualbox.html
+      output: web, pdf
