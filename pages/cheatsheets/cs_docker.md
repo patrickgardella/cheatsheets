@@ -80,4 +80,30 @@ command exits, stop the container without saving any changes:
 
 ```bash
     docker-machine create --driver virtualbox --virtualbox-disk-size "40000" default
+
 ```
+
+## Networking
+
+### Identify IP of the container
+
+```bash
+docker inspect -f "{{ .NetworkSettings.Networks.nat.IPAddress }}" myapp
+```
+
+## Common Problems
+
+### Windows
+
+If trying to run docker commands from Git Bash, it won't properly work with `${PWD}`. To deal with this, you have to set the environment variable:
+
+```bash
+MSYS_NO_PATHCONV=1 docker run -v $(pwd):/docs ...
+```
+
+or
+
+```bash
+MSYS_NO_PATHCONV=1 docker-compose up
+```
+
