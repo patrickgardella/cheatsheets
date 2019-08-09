@@ -80,16 +80,17 @@ command exits, stop the container without saving any changes:
 
 ```bash
     docker-machine create --driver virtualbox --virtualbox-disk-size "40000" default
-
 ```
 
 ## Networking
 
 ### Identify IP of the container
 
+{% raw %}
 ```bash
-docker inspect -f "{{ .NetworkSettings.Networks.nat.IPAddress }}" myapp
+    docker inspect -f "{{ .NetworkSettings.Networks.nat.IPAddress }}" myapp
 ```
+{% endraw %}
 
 ## Common Problems
 

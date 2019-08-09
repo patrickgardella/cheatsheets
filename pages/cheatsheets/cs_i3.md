@@ -12,72 +12,67 @@ folder: cheatsheets
 
 * [https://i3wm.org/docs/refcard.html](https://i3wm.org/docs/refcard.html)
 
-Mod Key: Alt
-
-## Change what we see
-
-    Alt-<NUMBER>: switch to workspace NUMBER on whatever monitor it's
-                attached to.
-    Alt-Control-1: Only use built-in laptop display
-    Alt-Control-2: Use built-in laptop display, and external display
-                 positioned to its left
-    Alt-<n>:    Switch to workspace <n> (need not already exist)
-              (if workspace <n> is on another screen, it'll switch
-              that screen to workspace <n>, not your current screen)
-    Alt-<n> where <n> is the current workspace: Switch back to previous
-              workspace (So you can just do Alt-1 (look at screen) Alt-1
-              and be back where you started)
+Mod Key: <kbd>Alt</kbd> ⌥ (Mod1)
 
 ## Focus
 
-    Alt-j, Alt-<left>   left
-    Alt-k, Alt-<down>   down
-    Alt-l, Alt-<up>     up
-    Alt-;, Alt-<right>  right
+    Alt-j or Alt-<left>   left
+    Alt-k or Alt-<down>   down
+    Alt-l or Alt-<up>     up
+    Alt-; or Alt-<right>  right
+    Alt-space  		toggle focus mode
 
-## Move things
+## Workspace
 
-    Alt-Control-<ARROW>: Move current workspace to another monitor.
+    Alt-<n>:    Switch to workspace <n> (need not already exist)
+                (if workspace <n> is on another screen, it'll switch
+                that screen to workspace <n>, not your current screen)
     Alt-Shift-Number: Move current window to another workspace
            (need not already exist)
     Shift-<FOCUS COMMAND>: Move current window within workspace
 
+    Alt-Control-1: Only use built-in laptop display
+    Alt-Control-2: Use built-in laptop display, and external display
+                   positioned to its left
+
+    Alt-Control-<ARROW>: Move current workspace to another monitor.
+
 ## Layouts
 
-    Alt-e             default (splith/splitv), repeat to toggle
-                    splith/splitv
+    Alt-e             toggle between defaulting to horizontal and
+                      defaulting to vertical
     Alt-s             stacked
     Alt-w             tabbed
+
+## Resize Window
+
     Alt-f             fullscreen (toggle)
-    Alt-S-<spc>       float  (toggle)
-    Alt-mouse1-drag   move floating
-
+    Alt-r             resize mode
     Alt-h             Make the current window/container a horizontal
-                    split container. New windows opened when this
-                    container is focused will be created
-                    by splitting this container horizontally
-                    (side-by-side)
+                      split container. New windows opened when this
+                      container is focused will be created
+                      by splitting this container horizontally
+                      (side-by-side)
     Alt-v             Like Alt-h, but vertical (one above another)
+    Alt-mouse2-drag   stretch or shrink window
 
-    Alt-e             toggle between defaulting to horizontal and
-                    defaulting to vertical
+## Floating
+
+    Alt-Shift-<spc>   float  (toggle)
+    Alt-mouse1-drag   move floating
 
 ## Start/end things
 
-    Alt-return: open new terminal
-    Alt-D: open dmenu at top to enter a command (output invisible,
-         use to start new graphical programs)
-    Alt-S-q       kill window
+    Alt-return:       open new terminal
+    Alt-d:            open dmenu at top to enter a command (output invisible,
+                      use to start new graphical programs)
+    Alt-Shift-q       kill window
 
 ## Control I3
 
-    Alt-S-c       reload I3 config
-    Alt-S-r       restart I3
-    Alt-S-e       kill I3 (logout)
-
-## Resizing
-
-    Alt-mouse2-drag  stretch or shrink window
+    Alt-Shift-c       reload I3 config
+    Alt-Shift-r       restart I3
+    Alt-Shift-e       kill I3 (logout)
 
 ## Screen capture
 
